@@ -1,9 +1,12 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-
 import os
 import re
 import csv
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 
 def spotify_session():

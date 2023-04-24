@@ -52,7 +52,7 @@ def download_tracks(playlist_dir):
         if video_ids:
             url = "https://www.youtube.com/watch?v=" + video_ids[0]
 
-            print(url)
+            print (f'Downloading song: {this_song}')
 
             initizilze_yt_dlp(dir, url)
 

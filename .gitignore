@@ -2,3 +2,6 @@
 .python-version
 .vscode
 *.csv
+__pycache__
+MP3
+.cache
