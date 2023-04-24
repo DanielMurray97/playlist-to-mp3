@@ -46,3 +46,19 @@ def extract_to_csv(file, tracks):
                 [artist["name"] for artist in track["track"]["artists"]]
             )
             writer.writerow([name, artists])
+
+
+def extract_main(file_name, playlist_link):
+    session = spotify_session()
+
+    print(playlist_link)
+
+    playlist_id = extract_playlist_id(playlist_link)
+
+    tracks = track_list(session, playlist_id)
+
+    extract_to_csv(file_name, tracks)
+
+
+if __name__ == "__main__":
+    pass
